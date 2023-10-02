@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/superior"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="#33B91C"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/medio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/inferior"
+        android:layout_below="@id/superior"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+
+        android:verticalScrollbarPosition="defaultPosition">
+
+        <View
+            android:id="@+id/medio1"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#470D04" />
+
+        <View
+            android:id="@+id/medio2"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="-0dp"
+            android:background="#470D04" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inferior"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="#D83923"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+    
+
+</RelativeLayout>
